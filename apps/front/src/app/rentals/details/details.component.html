@@ -1,0 +1,31 @@
+<div fxLayout="row" fxLayoutAlign="space-between start" fxLayoutGap="20px">
+  <div *ngIf="rental$ | async as rental">
+    <mat-card class="detail-card">
+      <mat-card-header>
+        <mat-card-title>
+          {{rental.title}}
+        </mat-card-title>
+      </mat-card-header>
+      <img mat-card-image [height]="300" [src]="rental.image">
+      <mat-card-content>
+        <mat-chip-list>
+          <mat-chip color="primary" selected>{{rental.city}}</mat-chip>
+          <mat-chip>{{rental.type}}</mat-chip>
+          <mat-chip>{{rental.roomsNbr}} Ch</mat-chip>
+          <mat-chip>{{rental.guestsNbr}} Pers</mat-chip>
+          <mat-chip color="accent" selected>{{rental.price}} € par nuit</mat-chip>
+        </mat-chip-list>
+        <p>
+          {{rental.description}}
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  <div fxFlex="40">
+    <app-price-calculator
+      [rental]="rental$ | async">
+    </app-price-calculator>
+  </div>
+</div>

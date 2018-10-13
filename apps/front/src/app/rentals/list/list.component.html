@@ -1,0 +1,52 @@
+<div class="grid-container">
+  <div fxLayout="row"
+       fxLayoutAlign="space-between center">
+    <h1 class="mat-h1">Logements disponibles</h1>
+    <mat-form-field fxFlex="200px" class="search-form">
+      <input
+        [formControl]="searchControl"
+        matInput
+        type="search" placeholder="Chercher une ville"
+      />
+      <button
+        *ngIf="searchControl.value"
+        (click)="searchControl.setValue('')"
+        mat-button
+        matSuffix mat-icon-button aria-label="Clear">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+  </div>
+  <div *ngIf="loading$ | async; else rentalsList" fxLayout="row" fxLayoutAlign="center center">
+    <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+  </div>
+  <ng-template #rentalsList>
+    <mat-grid-list cols="3">
+      <mat-grid-tile *ngFor="let rental of rentals$ | async" [colspan]="1" [rowspan]="1">
+        <mat-card class="home-card">
+          <mat-card-header>
+            <mat-card-title>
+              <a [routerLink]="['/rentals/', rental.id]">{{rental.title}}</a>
+            </mat-card-title>
+          </mat-card-header>
+          <img [routerLink]="['/rentals/', rental.id]" mat-card-image [height]="190" [src]="rental.image">
+          <mat-card-content>
+            <mat-chip-list>
+              <mat-chip color="primary" selected>{{rental.city}}</mat-chip>
+              <mat-chip>{{rental.type}}</mat-chip>
+              <mat-chip>{{rental.roomsNbr}} Ch</mat-chip>
+              <mat-chip>{{rental.guestsNbr}} Pers</mat-chip>
+              <mat-chip *ngIf="loggedIn$ | async; else logInForPrice" color="accent" selected>{{rental.price}} € par nuit</mat-chip>
+              <ng-template #logInForPrice>
+                <mat-chip color="warn" selected>Connectez-vous pour voir le prix</mat-chip>
+              </ng-template>
+            </mat-chip-list>
+            <div class="actions">
+              <button [routerLink]="['/rentals/', rental.id]" mat-stroked-button color="accent">Réserver</button>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </ng-template>
+</div>

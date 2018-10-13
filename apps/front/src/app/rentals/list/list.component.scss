@@ -1,0 +1,40 @@
+.grid-container {
+  margin: 20px;
+}
+
+.home-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+mat-card-title {
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+
+  a {
+    text-decoration: none;
+    color: rgb(72, 72, 72);
+  }
+}
+
+[mat-card-image]:hover {
+  cursor: pointer;
+}
+
+mat-card-content {
+  line-height: 18px;
+  letter-spacing: 0.2px;
+}
+
+.actions {
+  margin-top: 10px;
+}
+//mat-card-actions {
+//  button {
+//    margin-left: 15px;
+//  }
+//}

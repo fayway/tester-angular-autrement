@@ -1,0 +1,19 @@
+.detail-card {
+  height: calc(100vh - 180px) ;
+}
+
+mat-card-title {
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+}
+
+mat-card-actions {
+  button {
+    margin-left: 15px;
+  }
+}
+
+p {
+  text-align: justify;
+}

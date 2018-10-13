@@ -1,0 +1,79 @@
+<mat-card class="simulator">
+  <mat-card-content>
+    <mat-list>
+      <h2>Réservation detail</h2>
+    </mat-list>
+    <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="10px" class="period-container">
+      <mat-form-field fxFlex="grow" appearance="outline">
+        <mat-label>Arrivée → Départ</mat-label>
+        <input
+          [formControl]="period"
+          matInput
+          placeholder="Période"
+          [minDate]="minDate"
+          [bsConfig]="{ rangeInputFormat: 'DD/MM/YYYY', containerClass: 'theme-dark-blue' }"
+          placement="left"
+          bsDaterangepicker>
+        <mat-icon matSuffix>calendar_today</mat-icon>
+      </mat-form-field>
+      <div fxFlex="20" class="mat-h3">
+        {{period.value | daysCalculator | i18nPlural: jourPluralMapping}}
+      </div>
+    </div>
+    <mat-list *ngIf="priceSimulator$ | async as priceSimulator">
+      <mat-divider></mat-divider>
+      <mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+      <mat-list-item>
+        <mat-icon mat-list-icon>book</mat-icon>
+        <h4 mat-line>Total sans promotion</h4>
+        <p mat-line>{{ priceSimulator.getTotalPrice() | currency:'EUR':'symbol'}} </p>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+      <mat-list-item
+        *ngIf="priceSimulator.getDiscountByType(discountType.PREMIUM_USER) as premiumDiscount"
+        [class.green]="premiumDiscount.isApplicable"
+        [class.warn]="!premiumDiscount.isApplicable">
+        <mat-icon mat-list-icon>{{premiumDiscount.icon}}</mat-icon>
+        <h4 mat-line>Promotion Client Premium</h4>
+        <p mat-line>{{ premiumDiscount.discount | currency:'EUR':'symbol'}}</p>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+      <mat-list-item
+        *ngIf="priceSimulator.getDiscountByType(discountType.DURATION) as durationDiscount"
+        [class.green]="durationDiscount.isApplicable"
+        [class.warn]="!durationDiscount.isApplicable">
+        <mat-icon mat-list-icon>{{durationDiscount.icon}}</mat-icon>
+        <h4 mat-line>Promotion durée séjour 7 jours et plus</h4>
+        <p mat-line>{{durationDiscount.discount | currency:'EUR':'symbol'}} </p>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-progress-bar *ngIf="loading === true" mode="indeterminate"></mat-progress-bar>
+      <mat-list-item
+        *ngIf="priceSimulator.getDiscountByType(discountType.SLICE) as sliceDiscount"
+        [class.green]="sliceDiscount.isApplicable"
+        [class.warn]="!sliceDiscount.isApplicable">
+        <mat-icon mat-list-icon>{{sliceDiscount.icon}}</mat-icon>
+        <h4 mat-line>Promotion valeur séjour dépassant 500 €</h4>
+        <p mat-line>{{sliceDiscount.discount | currency:'EUR':'symbol'}} </p>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+      <mat-list-item class="mat-h1">
+        <mat-icon mat-list-icon>attach_money</mat-icon>
+        <h4 mat-line>Prix final</h4>
+        <p mat-line class="mat-body-2">{{priceSimulator.getFinalPrice() | currency:'EUR':'symbol'}} </p>
+      </mat-list-item>
+      <a
+        [disabled]="loading === true || priceSimulator.days === 0"
+        class="payment"
+        mat-raised-button
+        color="primary"
+        href="https://twitter.com/fayway2"
+        target="_blank">
+        Payer <mat-icon mat-list-icon>payment</mat-icon>
+      </a>
+    </mat-list>
+  </mat-card-content>
+</mat-card>

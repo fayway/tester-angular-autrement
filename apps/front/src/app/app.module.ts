@@ -1,18 +1,30 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
+import { registerLocaleData } from '@angular/common';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import localeFr from '@angular/common/locales/fr';
 
-import { AppComponent } from './app.component';
-import { NxModule } from '@nrwl/nx';
-import { RouterModule } from '@angular/router';
+import { CoreModule } from './core/core.module';
+import { AppRoutingModule } from './app-routing/app-routing.module';
+import { SharedModule } from './shared/shared.module';
+import { ShellRootComponent } from './shell/root/shell-root.component';
+import { ShellModule } from './shell/shell.module';
+import { RentalsModule } from './rentals/rentals.module';
+import { AuthInterceptor } from './auth/auth.interceptor';
+
+registerLocaleData(localeFr);
 
 @NgModule({
-  declarations: [AppComponent],
   imports: [
-    BrowserModule,
-    NxModule.forRoot(),
-    RouterModule.forRoot([], { initialNavigation: 'enabled' })
+    CoreModule,
+    AppRoutingModule,
+    ShellModule,
+    RentalsModule,
+    SharedModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    { provide: LOCALE_ID, useValue: 'fr' },
+    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
+  ],
+  bootstrap: [ShellRootComponent],
 })
 export class AppModule {}

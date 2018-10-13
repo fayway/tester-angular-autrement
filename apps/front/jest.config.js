@@ -1,5 +1,12 @@
 module.exports = {
   name: 'front',
   preset: '../../jest.config.js',
-  coverageDirectory: '../../coverage/apps/front/'
+  coverageDirectory: '../../coverage/apps/front/',
+  globals: {
+    "__TRANSFORM_HTML__": true,
+    'ts-jest': {
+      'tsConfigFile': '<rootDir>/tsconfig.spec.json'
+    }
+  },
+  setupTestFrameworkScriptFile: '<rootDir>/src/test-setup.ts'
 };
