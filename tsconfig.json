@@ -16,6 +16,9 @@
     ],
     "baseUrl": ".",
     "paths": {
+      "@waterbnb-app/common": [
+        "libs/common/src/index.ts"
+      ]
     }
   },
   "exclude": [
