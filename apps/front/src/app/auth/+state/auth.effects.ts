@@ -25,7 +25,7 @@ export class AuthEffects {
           resp =>
             new LoginSuccess({ user: resp.user, accessToken: resp.accessToken }),
         ),
-        catchError(() => of(new LoginFailure('Invalid username or password'))),
+        catchError(() => of(new LoginFailure('Identifiant ou mot de passe incorrect'))),
       ),
     ),
   );

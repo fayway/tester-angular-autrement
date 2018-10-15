@@ -1,0 +1,568 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TestComponent should match initial snapshot 1`] = `
+<div
+  id="root1"
+  ng-version="6.1.10"
+>
+  <app-login-form
+    ng-reflect-pending="false"
+  >
+    <mat-card
+      class="mat-card"
+    >
+      <mat-card-title
+        class="mat-card-title"
+      >
+        Authentification
+      </mat-card-title>
+      <mat-card-content
+        class="mat-card-content"
+      >
+        <form
+          class="ng-untouched ng-pristine ng-invalid"
+          ng-reflect-form="[object Object]"
+          novalidate=""
+        >
+          <p>
+            <mat-form-field
+              class="mat-form-field ng-tns-c4-0 mat-primary mat-form-field-type-mat-input mat-form-field-appearance-legacy mat-form-field-can-float mat-form-field-hide-placeholder ng-untouched ng-pristine ng-invalid _mat-animation-noopable"
+            >
+              <div
+                class="mat-form-field-wrapper"
+              >
+                <div
+                  class="mat-form-field-flex"
+                >
+                  <!--bindings={
+  "ng-reflect-ng-if": "false"
+}-->
+                  <!--bindings={
+  "ng-reflect-ng-if": "0"
+}-->
+                  <div
+                    class="mat-form-field-infix"
+                  >
+                    <input
+                      aria-describedby="mat-hint-2 mat-hint-3"
+                      aria-invalid="false"
+                      aria-required="false"
+                      class="mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-invalid"
+                      formcontrolname="username"
+                      id="mat-input-2"
+                      matinput=""
+                      name="username"
+                      ng-reflect-name="username"
+                      ng-reflect-placeholder="Utilisateur"
+                      ng-reflect-type="text"
+                      placeholder="Utilisateur"
+                      type="text"
+                    />
+                    <span
+                      class="mat-form-field-label-wrapper"
+                    >
+                      <!--bindings={
+  "ng-reflect-ng-if": "true"
+}-->
+                      <label
+                        aria-owns="mat-input-2"
+                        class="mat-form-field-label ng-tns-c4-0 mat-empty mat-form-field-empty ng-star-inserted"
+                        for="mat-input-2"
+                        id="mat-form-field-label-5"
+                        ng-reflect-ng-switch="false"
+                      >
+                        <!--bindings={
+  "ng-reflect-ng-switch-case": "false"
+}-->
+                        <!---->
+                        Utilisateur
+                        <!--bindings={
+  "ng-reflect-ng-switch-case": "true"
+}-->
+                        <!--bindings={
+  "ng-reflect-ng-if": "false"
+}-->
+                      </label>
+                    </span>
+                  </div>
+                  <!--bindings={
+  "ng-reflect-ng-if": "0"
+}-->
+                </div>
+                <!--bindings={
+  "ng-reflect-ng-if": "true"
+}-->
+                <div
+                  class="mat-form-field-underline ng-tns-c4-0 ng-star-inserted"
+                >
+                  <span
+                    class="mat-form-field-ripple"
+                  />
+                </div>
+                <div
+                  class="mat-form-field-subscript-wrapper"
+                  ng-reflect-ng-switch="hint"
+                >
+                  <!--bindings={
+  "ng-reflect-ng-switch-case": "error"
+}-->
+                  <!--bindings={
+  "ng-reflect-ng-switch-case": "hint"
+}-->
+                  <div
+                    class="mat-form-field-hint-wrapper ng-tns-c4-0 ng-trigger ng-trigger-transitionMessages ng-star-inserted"
+                    style="opacity:1;transform:translateY(0%);0:opacity;1:transform;"
+                  >
+                    <!--bindings={
+  "ng-reflect-ng-if": ""
+}-->
+                    <mat-hint
+                      class="mat-hint"
+                      id="mat-hint-2"
+                      ng-reflect-align="start"
+                    >
+                      Client Premium : 
+                      <strong>
+                        user1/pass1
+                      </strong>
+                    </mat-hint>
+                    <div
+                      class="mat-form-field-hint-spacer"
+                    />
+                    <mat-hint
+                      class="mat-hint mat-right"
+                      id="mat-hint-3"
+                      ng-reflect-align="end"
+                    >
+                      Client normal : 
+                      <strong>
+                        user2/pass2
+                      </strong>
+                    </mat-hint>
+                  </div>
+                </div>
+              </div>
+            </mat-form-field>
+          </p>
+          <p>
+            <mat-form-field
+              class="mat-form-field ng-tns-c4-1 mat-primary mat-form-field-type-mat-input mat-form-field-appearance-legacy mat-form-field-can-float mat-form-field-hide-placeholder ng-untouched ng-pristine ng-invalid _mat-animation-noopable"
+            >
+              <div
+                class="mat-form-field-wrapper"
+              >
+                <div
+                  class="mat-form-field-flex"
+                >
+                  <!--bindings={
+  "ng-reflect-ng-if": "false"
+}-->
+                  <!--bindings={
+  "ng-reflect-ng-if": "0"
+}-->
+                  <div
+                    class="mat-form-field-infix"
+                  >
+                    <input
+                      aria-invalid="false"
+                      aria-required="false"
+                      class="mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-invalid"
+                      formcontrolname="password"
+                      id="mat-input-3"
+                      matinput=""
+                      name="password"
+                      ng-reflect-name="password"
+                      ng-reflect-placeholder="Mot de passe"
+                      ng-reflect-type="password"
+                      placeholder="Mot de passe"
+                      type="password"
+                    />
+                    <span
+                      class="mat-form-field-label-wrapper"
+                    >
+                      <!--bindings={
+  "ng-reflect-ng-if": "true"
+}-->
+                      <label
+                        aria-owns="mat-input-3"
+                        class="mat-form-field-label ng-tns-c4-1 mat-empty mat-form-field-empty ng-star-inserted"
+                        for="mat-input-3"
+                        id="mat-form-field-label-7"
+                        ng-reflect-ng-switch="false"
+                      >
+                        <!--bindings={
+  "ng-reflect-ng-switch-case": "false"
+}-->
+                        <!---->
+                        Mot de passe
+                        <!--bindings={
+  "ng-reflect-ng-switch-case": "true"
+}-->
+                        <!--bindings={
+  "ng-reflect-ng-if": "false"
+}-->
+                      </label>
+                    </span>
+                  </div>
+                  <!--bindings={
+  "ng-reflect-ng-if": "0"
+}-->
+                </div>
+                <!--bindings={
+  "ng-reflect-ng-if": "true"
+}-->
+                <div
+                  class="mat-form-field-underline ng-tns-c4-1 ng-star-inserted"
+                >
+                  <span
+                    class="mat-form-field-ripple"
+                  />
+                </div>
+                <div
+                  class="mat-form-field-subscript-wrapper"
+                  ng-reflect-ng-switch="hint"
+                >
+                  <!--bindings={
+  "ng-reflect-ng-switch-case": "error"
+}-->
+                  <!--bindings={
+  "ng-reflect-ng-switch-case": "hint"
+}-->
+                  <div
+                    class="mat-form-field-hint-wrapper ng-tns-c4-1 ng-trigger ng-trigger-transitionMessages ng-star-inserted"
+                    style="opacity:1;transform:translateY(0%);0:opacity;1:transform;"
+                  >
+                    <!--bindings={
+  "ng-reflect-ng-if": ""
+}-->
+                    <div
+                      class="mat-form-field-hint-spacer"
+                    />
+                  </div>
+                </div>
+              </div>
+            </mat-form-field>
+          </p>
+          <!--bindings={
+  "ng-reflect-ng-if": null
+}-->
+          <p
+            class="loginButtons"
+          >
+            <button
+              class="mat-raised-button _mat-animation-noopable"
+              disabled=""
+              mat-raised-button=""
+              ng-reflect-disabled="true"
+              type="submit"
+            >
+              <span
+                class="mat-button-wrapper"
+              >
+                Se connecter
+              </span>
+              <div
+                class="mat-button-ripple mat-ripple"
+                matripple=""
+                ng-reflect-centered="false"
+                ng-reflect-disabled="true"
+                ng-reflect-trigger="[object HTMLButtonElement]"
+              />
+              <div
+                class="mat-button-focus-overlay"
+              />
+            </button>
+          </p>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </app-login-form>
+</div>
+`;
+
+exports[`TestComponent should not log in and display an error for bad credentials 1`] = `
+<div
+  id="root3"
+  ng-version="6.1.10"
+>
+  <app-login-form
+    ng-reflect-error-message="Identifiant ou mot de passe in"
+    ng-reflect-pending="false"
+  >
+    <mat-card
+      class="mat-card"
+    >
+      <mat-card-title
+        class="mat-card-title"
+      >
+        Authentification
+      </mat-card-title>
+      <mat-card-content
+        class="mat-card-content"
+      >
+        <form
+          class="ng-untouched ng-pristine ng-invalid"
+          ng-reflect-form="[object Object]"
+          novalidate=""
+        >
+          <p>
+            <mat-form-field
+              class="mat-form-field ng-tns-c10-0 mat-primary mat-form-field-type-mat-input mat-form-field-appearance-legacy mat-form-field-can-float mat-form-field-hide-placeholder ng-untouched ng-pristine ng-invalid _mat-animation-noopable"
+            >
+              <div
+                class="mat-form-field-wrapper"
+              >
+                <div
+                  class="mat-form-field-flex"
+                >
+                  <!--bindings={
+  "ng-reflect-ng-if": "false"
+}-->
+                  <!--bindings={
+  "ng-reflect-ng-if": "0"
+}-->
+                  <div
+                    class="mat-form-field-infix"
+                  >
+                    <input
+                      aria-describedby="mat-hint-6 mat-hint-7"
+                      aria-invalid="false"
+                      aria-required="false"
+                      class="mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-invalid"
+                      formcontrolname="username"
+                      id="mat-input-6"
+                      matinput=""
+                      name="username"
+                      ng-reflect-name="username"
+                      ng-reflect-placeholder="Utilisateur"
+                      ng-reflect-type="text"
+                      placeholder="Utilisateur"
+                      type="text"
+                    />
+                    <span
+                      class="mat-form-field-label-wrapper"
+                    >
+                      <!--bindings={
+  "ng-reflect-ng-if": "true"
+}-->
+                      <label
+                        aria-owns="mat-input-6"
+                        class="mat-form-field-label ng-tns-c10-0 mat-empty mat-form-field-empty ng-star-inserted"
+                        for="mat-input-6"
+                        id="mat-form-field-label-13"
+                        ng-reflect-ng-switch="false"
+                      >
+                        <!--bindings={
+  "ng-reflect-ng-switch-case": "false"
+}-->
+                        <!---->
+                        Utilisateur
+                        <!--bindings={
+  "ng-reflect-ng-switch-case": "true"
+}-->
+                        <!--bindings={
+  "ng-reflect-ng-if": "false"
+}-->
+                      </label>
+                    </span>
+                  </div>
+                  <!--bindings={
+  "ng-reflect-ng-if": "0"
+}-->
+                </div>
+                <!--bindings={
+  "ng-reflect-ng-if": "true"
+}-->
+                <div
+                  class="mat-form-field-underline ng-tns-c10-0 ng-star-inserted"
+                >
+                  <span
+                    class="mat-form-field-ripple"
+                  />
+                </div>
+                <div
+                  class="mat-form-field-subscript-wrapper"
+                  ng-reflect-ng-switch="hint"
+                >
+                  <!--bindings={
+  "ng-reflect-ng-switch-case": "error"
+}-->
+                  <!--bindings={
+  "ng-reflect-ng-switch-case": "hint"
+}-->
+                  <div
+                    class="mat-form-field-hint-wrapper ng-tns-c10-0 ng-trigger ng-trigger-transitionMessages ng-star-inserted"
+                    style="opacity:1;transform:translateY(0%);0:opacity;1:transform;"
+                  >
+                    <!--bindings={
+  "ng-reflect-ng-if": ""
+}-->
+                    <mat-hint
+                      class="mat-hint"
+                      id="mat-hint-6"
+                      ng-reflect-align="start"
+                    >
+                      Client Premium : 
+                      <strong>
+                        user1/pass1
+                      </strong>
+                    </mat-hint>
+                    <div
+                      class="mat-form-field-hint-spacer"
+                    />
+                    <mat-hint
+                      class="mat-hint mat-right"
+                      id="mat-hint-7"
+                      ng-reflect-align="end"
+                    >
+                      Client normal : 
+                      <strong>
+                        user2/pass2
+                      </strong>
+                    </mat-hint>
+                  </div>
+                </div>
+              </div>
+            </mat-form-field>
+          </p>
+          <p>
+            <mat-form-field
+              class="mat-form-field ng-tns-c10-1 mat-primary mat-form-field-type-mat-input mat-form-field-appearance-legacy mat-form-field-can-float mat-form-field-hide-placeholder ng-untouched ng-pristine ng-invalid _mat-animation-noopable"
+            >
+              <div
+                class="mat-form-field-wrapper"
+              >
+                <div
+                  class="mat-form-field-flex"
+                >
+                  <!--bindings={
+  "ng-reflect-ng-if": "false"
+}-->
+                  <!--bindings={
+  "ng-reflect-ng-if": "0"
+}-->
+                  <div
+                    class="mat-form-field-infix"
+                  >
+                    <input
+                      aria-invalid="false"
+                      aria-required="false"
+                      class="mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-invalid"
+                      formcontrolname="password"
+                      id="mat-input-7"
+                      matinput=""
+                      name="password"
+                      ng-reflect-name="password"
+                      ng-reflect-placeholder="Mot de passe"
+                      ng-reflect-type="password"
+                      placeholder="Mot de passe"
+                      type="password"
+                    />
+                    <span
+                      class="mat-form-field-label-wrapper"
+                    >
+                      <!--bindings={
+  "ng-reflect-ng-if": "true"
+}-->
+                      <label
+                        aria-owns="mat-input-7"
+                        class="mat-form-field-label ng-tns-c10-1 mat-empty mat-form-field-empty ng-star-inserted"
+                        for="mat-input-7"
+                        id="mat-form-field-label-15"
+                        ng-reflect-ng-switch="false"
+                      >
+                        <!--bindings={
+  "ng-reflect-ng-switch-case": "false"
+}-->
+                        <!---->
+                        Mot de passe
+                        <!--bindings={
+  "ng-reflect-ng-switch-case": "true"
+}-->
+                        <!--bindings={
+  "ng-reflect-ng-if": "false"
+}-->
+                      </label>
+                    </span>
+                  </div>
+                  <!--bindings={
+  "ng-reflect-ng-if": "0"
+}-->
+                </div>
+                <!--bindings={
+  "ng-reflect-ng-if": "true"
+}-->
+                <div
+                  class="mat-form-field-underline ng-tns-c10-1 ng-star-inserted"
+                >
+                  <span
+                    class="mat-form-field-ripple"
+                  />
+                </div>
+                <div
+                  class="mat-form-field-subscript-wrapper"
+                  ng-reflect-ng-switch="hint"
+                >
+                  <!--bindings={
+  "ng-reflect-ng-switch-case": "error"
+}-->
+                  <!--bindings={
+  "ng-reflect-ng-switch-case": "hint"
+}-->
+                  <div
+                    class="mat-form-field-hint-wrapper ng-tns-c10-1 ng-trigger ng-trigger-transitionMessages ng-star-inserted"
+                    style="opacity:1;transform:translateY(0%);0:opacity;1:transform;"
+                  >
+                    <!--bindings={
+  "ng-reflect-ng-if": ""
+}-->
+                    <div
+                      class="mat-form-field-hint-spacer"
+                    />
+                  </div>
+                </div>
+              </div>
+            </mat-form-field>
+          </p>
+          <!--bindings={
+  "ng-reflect-ng-if": "Identifiant ou mot de passe in"
+}-->
+          <p
+            class="loginError ng-star-inserted"
+            data-testid="errorMessage"
+          >
+             Identifiant ou mot de passe incorrect 
+          </p>
+          <p
+            class="loginButtons"
+          >
+            <button
+              class="mat-raised-button _mat-animation-noopable"
+              disabled=""
+              mat-raised-button=""
+              ng-reflect-disabled="true"
+              type="submit"
+            >
+              <span
+                class="mat-button-wrapper"
+              >
+                Se connecter
+              </span>
+              <div
+                class="mat-button-ripple mat-ripple"
+                matripple=""
+                ng-reflect-centered="false"
+                ng-reflect-disabled="true"
+                ng-reflect-trigger="[object HTMLButtonElement]"
+              />
+              <div
+                class="mat-button-focus-overlay"
+              />
+            </button>
+          </p>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </app-login-form>
+</div>
+`;

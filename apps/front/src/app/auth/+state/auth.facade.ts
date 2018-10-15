@@ -14,7 +14,7 @@ export class AuthFacade {
   user$ = this.store.pipe(select(authQuery.getUser));
   accessToken = this.store.pipe(select(authQuery.getAccessToken));
   loginPagePending$ = this.store.pipe(select(authQuery.getLoginPagePending));
-  seleloginPageError$ = this.store.pipe(select(authQuery.getLoginPageError));
+  loginPageError$ = this.store.pipe(select(authQuery.getLoginPageError));
 
   constructor(private store: Store<{ auth: AuthState }>) {}
 

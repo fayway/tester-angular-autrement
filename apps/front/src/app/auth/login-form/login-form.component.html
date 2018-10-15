@@ -4,21 +4,21 @@
     <form [formGroup]="form" (ngSubmit)="submit()">
       <p>
         <mat-form-field>
-          <input type="text" matInput placeholder="Utilisateur" formControlName="username">
+          <input formControlName="username" name="username" type="text" matInput placeholder="Utilisateur" >
           <mat-hint align="start">Client Premium : <strong>user1/pass1</strong></mat-hint>
           <mat-hint align="end">Client normal : <strong>user2/pass2</strong></mat-hint>
         </mat-form-field>
       </p>
       <p>
         <mat-form-field>
-          <input type="password" matInput placeholder="Mot de passe" formControlName="password">
+          <input formControlName="password" name="password" type="password" matInput placeholder="Mot de passe">
         </mat-form-field>
       </p>
-      <p *ngIf="errorMessage" class="loginError">
+      <p *ngIf="errorMessage" class="loginError" data-testid="errorMessage">
         {{ errorMessage }}
       </p>
       <p class="loginButtons">
-        <button type="submit" mat-raised-button>Se connecter</button>
+        <button [disabled]="!form.valid" type="submit" mat-raised-button>Se connecter</button>
       </p>
     </form>
   </mat-card-content>

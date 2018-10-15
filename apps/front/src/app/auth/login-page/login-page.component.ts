@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
 
 import { AuthenticateBody } from '../user.models';
 import { AuthFacade } from '../+state/auth.facade';
@@ -16,7 +15,7 @@ import { AuthFacade } from '../+state/auth.facade';
 })
 export class LoginPageComponent implements OnInit {
   pending$ = this.authFacade.loginPagePending$;
-  error$ = this.authFacade.seleloginPageError$;
+  error$ = this.authFacade.loginPageError$;
 
   constructor(private authFacade: AuthFacade) {}
 

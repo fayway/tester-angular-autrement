@@ -7,12 +7,14 @@ import { AuthFacade } from '../../auth/+state/auth.facade';
 describe('NavbarComponent ngx-testing-library way', () => {
 
   it('should create', async () => {
-    const { getByTestId  } = await createComponent(`<app-navbar></app-navbar>`, {
-      declarations: [NavbarComponent],
-      providers: [
-        { provide: AuthFacade, useValue: jest.fn() }
-      ],
-      schemas: [NO_ERRORS_SCHEMA],
+    const { getByTestId  } = await createComponent(
+      `<app-navbar></app-navbar>`,
+      {
+        declarations: [NavbarComponent],
+        providers: [
+          { provide: AuthFacade, useValue: jest.fn() }
+        ],
+        schemas: [NO_ERRORS_SCHEMA],
     });
     expect(getByTestId('company-name').textContent).toEqual('WaterBnb');
   });
