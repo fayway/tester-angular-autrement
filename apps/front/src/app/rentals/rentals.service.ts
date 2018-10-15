@@ -12,12 +12,13 @@ export class RentalsService {
   constructor(private http: HttpClient) {}
 
   getRentals(query: RentalsQuery): Observable<Rental[]> {
-    let params = new HttpParams();
+    let params;
     if (query.city) {
+      params = new HttpParams();
       params = params.append('city', query.city);
     }
     return this.http
-      .get<Rental[]>('/api/rentals', { params })
+      .get<Rental[]>('/api/rentals', params ? { params } : undefined)
       .pipe(delay(1000));
   }
 

@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppRoutingModule should contains correct routes/guards 1`] = `
+Routes: [ 
+   Route: {
+            path: ,
+            component: undefined,
+            redirectTo: /rentals,
+            pathMatch: full,
+            canActivate: undefined
+          }
+,   Route: {
+            path: login,
+            component: LoginPageComponent,
+            redirectTo: undefined,
+            pathMatch: undefined,
+            canActivate: undefined
+          }
+,   Route: {
+            path: rentals,
+            component: ListComponent,
+            redirectTo: undefined,
+            pathMatch: undefined,
+            canActivate: undefined
+          }
+,   Route: {
+            path: rentals/:id,
+            component: DetailsComponent,
+            redirectTo: undefined,
+            pathMatch: undefined,
+            canActivate: AuthGuard,DetailsGuard
+          }
+,   Route: {
+            path: **,
+            component: NotfoundPageComponent,
+            redirectTo: undefined,
+            pathMatch: undefined,
+            canActivate: undefined
+          }
+]
+`;

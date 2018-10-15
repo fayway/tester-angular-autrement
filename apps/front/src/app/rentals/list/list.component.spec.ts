@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, discardPeriodicTasks, fakeAsync, TestBed, tick } from '@angular/core/testing';
 
 import { ListComponent } from './list.component';
 import { SharedModule } from '../../shared/shared.module';
@@ -13,12 +13,21 @@ import { authReducers } from '../../auth/+state/auth.selectors';
 import { AuthEffects } from '../../auth/+state/auth.effects';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { FlexLayoutModule } from '@angular/flex-layout';
+import { RentalsService } from '../rentals.service';
+import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
+import { of } from 'rxjs';
+import { Rental, Type } from '../rentals.models';
 
 describe('TestComponent', () => {
   let component: ListComponent;
   let fixture: ComponentFixture<ListComponent>;
   let nativeElement: Element;
+  let router: Router;
+  let httpClient: HttpClient;
+  const rentals: Rental[] = [
+    {id: 1, title: 'Title', price: 80, description: 'desc', city: 'Paris', image: 'image', type: Type.ENTIRE_HOME, roomsNbr: 2, guestsNbr: 4}
+  ];
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -37,6 +46,7 @@ describe('TestComponent', () => {
       providers: [
         RentalsFacade,
         AuthFacade,
+        RentalsService,
       ]
     })
     .compileComponents();
@@ -46,6 +56,11 @@ describe('TestComponent', () => {
     fixture = TestBed.createComponent(ListComponent);
     component = fixture.componentInstance;
     nativeElement = fixture.nativeElement;
+
+    router = TestBed.get(Router);
+    httpClient = TestBed.get(HttpClient);
+
+    spyOn(httpClient, 'get').and.returnValue(of(rentals));
     fixture.detectChanges();
   });
 
@@ -53,7 +68,11 @@ describe('TestComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should match snapshot', () => {
-    expect(nativeElement).toMatchSnapshot();
-  });
+  it('should match snapshot', async(() => {
+    // https://github.com/angular/angular/issues/10127
+    fixture.whenStable().then(() => {
+      expect(httpClient.get).toHaveBeenCalledWith('/api/rentals', undefined);
+      expect(nativeElement).toMatchSnapshot();
+    });
+  }));
 });

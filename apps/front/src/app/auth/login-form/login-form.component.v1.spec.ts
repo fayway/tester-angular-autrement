@@ -9,16 +9,16 @@ describe('TestComponent', () => {
   let component: LoginFormComponent;
   let fixture: ComponentFixture<LoginFormComponent>;
 
-  let nativeElement:Element;
-  let username:HTMLInputElement;
-  let password:HTMLInputElement;
-  let submit:HTMLButtonElement;
+  let nativeElement: Element;
+  let username: HTMLInputElement;
+  let password: HTMLInputElement;
+  let submit: HTMLButtonElement;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LoginFormComponent ],
-      imports: [ FormsModule, ReactiveFormsModule ],
-      schemas: [NO_ERRORS_SCHEMA],
+      declarations: [LoginFormComponent],
+      imports: [ReactiveFormsModule],
+      schemas: [NO_ERRORS_SCHEMA]
     })
     .compileComponents();
   }));
@@ -59,12 +59,12 @@ describe('TestComponent', () => {
     // password.value = 'pass';
     // password.dispatchEvent(new Event('input'));
 
-    fireEvent.input(username, { target: { value: 'user'}});
-    fireEvent.input(password, { target: { value: 'pass'}});
+    fireEvent.input(username, { target: { value: 'user' } });
+    fireEvent.input(password, { target: { value: 'pass' } });
 
     fixture.detectChanges();
 
     submit.click();
-    expect(component.submitted.emit).toHaveBeenCalledWith({username: 'user', password: 'pass'});
+    expect(component.submitted.emit).toHaveBeenCalledWith({ username: 'user', password: 'pass' });
   });
 });

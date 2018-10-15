@@ -92,6 +92,7 @@
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
     "ngrx-store-freeze": "0.2.4",
+    "ngx-speculoos": "^0.2.3",
     "ngx-testing-library": "^1.1.0",
     "prettier": "1.13.7",
     "protractor": "~5.4.0",
