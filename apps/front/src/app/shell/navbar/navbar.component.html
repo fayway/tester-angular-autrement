@@ -1,18 +1,18 @@
 <mat-toolbar color="primary" class="mat-elevation-z6">
   <a routerLink="/" mat-button class="company">
-    <mat-icon>pool</mat-icon> WaterBnb
+    <mat-icon>pool</mat-icon> <span data-testid="company-name">WaterBnb</span>
   </a>
   <span class="catchword">Locations les pieds dans l'eau</span>
   <span class="fill-remaining-space"></span>
-  <a *ngIf="!(loggedIn$ | async); else logoutTpl" routerLink="/login" mat-button test-id="login">
+  <a *ngIf="!(loggedIn$ | async); else logoutTpl" routerLink="/login" mat-button data-testid="login">
     <mat-icon>account_circle</mat-icon>
   </a>
   <ng-template #logoutTpl>
     <ng-container *ngIf="user$ | async as user">
-      <i *ngIf="user.isPremium" class="material-icons premium" test-id="premium">stars</i>
-      <span test-id="user">{{user.firstname}} {{user.lastname}}</span>
+      <i *ngIf="user.isPremium" class="material-icons premium" data-testid="premium">stars</i>
+      <span data-testid="user">{{user.firstname}} {{user.lastname}}</span>
     </ng-container>
-    <button (click)="logoutUser()" mat-mini-fab class="logout" test-id="logout">
+    <button (click)="logoutUser()" mat-mini-fab class="logout" data-testid="logout">
       <mat-icon aria-label="Logout">power_off</mat-icon>
     </button>
   </ng-template>

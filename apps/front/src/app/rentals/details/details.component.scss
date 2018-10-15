@@ -1,5 +1,6 @@
 .detail-card {
-  height: calc(100vh - 180px) ;
+  height: calc(100vh - 180px);
+  min-height: 500px;
 }
 
 mat-card-title {

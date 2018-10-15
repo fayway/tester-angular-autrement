@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavbarComponent Snapshot testing way should create match initail snapshot 1`] = `
+<div
+  id="root0"
+  ng-version="6.1.10"
+>
+  <mat-toolbar
+    class="mat-elevation-z6"
+    color="primary"
+  >
+    <a
+      class="company"
+      mat-button=""
+      routerlink="/"
+    >
+      <mat-icon>
+        pool
+      </mat-icon>
+      <span
+        data-testid="company-name"
+      >
+        WaterBnb
+      </span>
+    </a>
+    <span
+      class="catchword"
+    >
+      Locations les pieds dans l'eau
+    </span>
+    <span
+      class="fill-remaining-space"
+    />
+    <!--bindings={
+  "ng-reflect-ng-if": "true",
+  "ng-reflect-ng-if-else": "[object Object]"
+}-->
+    <a
+      data-testid="login"
+      mat-button=""
+      routerlink="/login"
+    >
+      <mat-icon>
+        account_circle
+      </mat-icon>
+    </a>
+    <!---->
+  </mat-toolbar>
+</div>
+`;
+
+exports[`NavbarComponent Snapshot testing way should match snapshot when logged in 1`] = `
+<div
+  id="root1"
+  ng-version="6.1.10"
+>
+  <mat-toolbar
+    class="mat-elevation-z6"
+    color="primary"
+  >
+    <a
+      class="company"
+      mat-button=""
+      routerlink="/"
+    >
+      <mat-icon>
+        pool
+      </mat-icon>
+      <span
+        data-testid="company-name"
+      >
+        WaterBnb
+      </span>
+    </a>
+    <span
+      class="catchword"
+    >
+      Locations les pieds dans l'eau
+    </span>
+    <span
+      class="fill-remaining-space"
+    />
+    <!--bindings={
+  "ng-reflect-ng-if": "false",
+  "ng-reflect-ng-if-else": "[object Object]"
+}-->
+    <!--bindings={
+  "ng-reflect-ng-if": "[object Object]"
+}-->
+    <!---->
+    <!--bindings={
+  "ng-reflect-ng-if": "false"
+}-->
+    <span
+      data-testid="user"
+    >
+      Bob Marley
+    </span>
+    <button
+      class="logout"
+      data-testid="logout"
+      mat-mini-fab=""
+    >
+      <mat-icon
+        aria-label="Logout"
+      >
+        power_off
+      </mat-icon>
+    </button>
+    <!---->
+  </mat-toolbar>
+</div>
+`;

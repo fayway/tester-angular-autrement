@@ -1,9 +1,9 @@
 import { AuthActionsUnion, AuthActionTypes } from './auth.actions';
-import { UserModels } from '../user.models';
+import { UserModel } from '../user.models';
 
 export interface State {
   loggedIn: boolean;
-  user: UserModels;
+  user: UserModel;
   accessToken: string;
 }
 

@@ -6,7 +6,9 @@ import { AppModule } from './app/app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  app.useStaticAssets(join(__dirname, '..', 'public'));
+  const publicDir = join(__dirname, '../../../apps/api/public');
+  console.log('BOB', publicDir);
+  app.useStaticAssets(publicDir);
 
   const options = new DocumentBuilder()
     .setTitle('Waterbnb')

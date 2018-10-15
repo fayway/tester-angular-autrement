@@ -1,0 +1,50 @@
+@import './variables';
+@import './icons';
+@import './fonts';
+
+body {
+  margin: 0px;
+  font-family: 'Ubuntu', sans-serif;
+
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  app-root {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 56px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  app-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .app-content {
+    overflow-y: auto;
+  }
+  @media (max-width: 720px) {
+    .app-content {
+      overflow-y: visible;
+    }
+  }
+
+  .bg-green {
+    background-color: $green !important;
+  }
+
+  .green {
+    color: $green !important;
+  }
+
+  .warn {
+    color: $warn !important;
+  }
+}

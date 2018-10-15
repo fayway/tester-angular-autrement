@@ -5,10 +5,10 @@ export interface AuthenticateBody {
 
 export interface AuthenticateResponse {
   accessToken: string;
-  user: UserModels;
+  user: UserModel;
 }
 
-export interface UserModels {
+export interface UserModel {
   username: string;
   firstname: string;
   lastname: string;
