@@ -23,26 +23,26 @@
   <ng-template #rentalsList>
     <mat-grid-list cols="3">
       <mat-grid-tile *ngFor="let rental of rentals$ | async" [colspan]="1" [rowspan]="1">
-        <mat-card class="home-card">
+        <mat-card class="home-card" [attr.data-testid]="'rental-'  + rental.id">
           <mat-card-header>
             <mat-card-title>
-              <a [routerLink]="['/rentals/', rental.id]">{{rental.title}}</a>
+              <a [routerLink]="['/rentals/', rental.id]" data-testid="title">{{rental.title}}</a>
             </mat-card-title>
           </mat-card-header>
-          <img [routerLink]="['/rentals/', rental.id]" mat-card-image [height]="190" [src]="rental.image">
+          <img [routerLink]="['/rentals/', rental.id]" mat-card-image [height]="190" [src]="rental.image" data-testid="image">
           <mat-card-content>
             <mat-chip-list>
-              <mat-chip color="primary" selected>{{rental.city}}</mat-chip>
-              <mat-chip>{{rental.type}}</mat-chip>
-              <mat-chip>{{rental.roomsNbr}} Ch</mat-chip>
-              <mat-chip>{{rental.guestsNbr}} Pers</mat-chip>
-              <mat-chip *ngIf="loggedIn$ | async; else logInForPrice" color="accent" selected>{{rental.price}} € par nuit</mat-chip>
+              <mat-chip color="primary" selected data-testid="city">{{rental.city}}</mat-chip>
+              <mat-chip data-testid="type">{{rental.type}}</mat-chip>
+              <mat-chip data-testid="roomsNbr">{{rental.roomsNbr}} Ch</mat-chip>
+              <mat-chip data-testid="guestsNbr">{{rental.guestsNbr}} Pers</mat-chip>
+              <mat-chip *ngIf="loggedIn$ | async; else logInForPrice" color="accent" selected data-testid="price">{{rental.price}} € par nuit</mat-chip>
               <ng-template #logInForPrice>
-                <mat-chip color="warn" selected>Connectez-vous pour voir le prix</mat-chip>
+                <mat-chip color="warn" selected data-testid="price">Connectez-vous pour voir le prix</mat-chip>
               </ng-template>
             </mat-chip-list>
             <div class="actions">
-              <button [routerLink]="['/rentals/', rental.id]" mat-stroked-button color="accent">Réserver</button>
+              <button [routerLink]="['/rentals/', rental.id]" mat-stroked-button color="accent" data-testid="book">Réserver</button>
             </div>
           </mat-card-content>
         </mat-card>

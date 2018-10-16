@@ -19,7 +19,8 @@
       "@waterbnb-app/common": [
         "libs/common/src/index.ts"
       ]
-    }
+    },
+    "types": ["jest"]
   },
   "exclude": [
     "node_modules",

@@ -1,0 +1,14 @@
+[
+  {
+    "id": 2,
+    "title": "Bel Appartement, vue sur mer",
+    "description":
+    "Logement de 80 m2 avec jardin pouvant accueillir jusqu’à 4 personnes.",
+    "city": "Agadir",
+    "guestsNbr": 4,
+    "roomsNbr": 6,
+    "type": "Chambre privée",
+    "price": 35,
+    "image": "http://localhost:3000/rentals/laspalmas2.jpg"
+  }
+]

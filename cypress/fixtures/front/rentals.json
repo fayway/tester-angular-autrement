@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Très beau studio avec terrasse à 2 pas de la mer",
+    "description":
+    "Studio 25m² à deux pas de la plage et de tout commerce.",
+    "city": "Nice",
+    "guestsNbr": 2,
+    "roomsNbr": 1,
+    "type": "Logement entier",
+    "price": 40,
+    "image": "http://localhost:3000/rentals/laspalmas1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Bel Appartement, vue sur mer",
+    "description":
+    "Logement de 80 m2 avec jardin pouvant accueillir jusqu’à 4 personnes.",
+    "city": "Agadir",
+    "guestsNbr": 4,
+    "roomsNbr": 6,
+    "type": "Chambre privée",
+    "price": 35,
+    "image": "http://localhost:3000/rentals/laspalmas2.jpg"
+  }
+]
