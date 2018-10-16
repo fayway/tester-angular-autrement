@@ -9,7 +9,12 @@ import * as fromLoginPage from './login-page.reducer';
 
 export interface AuthState {
   status: fromAuth.State;
-  loginPage: fromLoginPage.LoginPageState;
+  loginPage?: fromLoginPage.LoginPageState;
+}
+
+export const authInitialState: AuthState = {
+  status: fromAuth.initialState,
+  loginPage: fromLoginPage.initialState,
 }
 
 export interface State extends fromRoot.State {

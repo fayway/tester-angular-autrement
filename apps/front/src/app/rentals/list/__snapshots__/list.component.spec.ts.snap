@@ -1,0 +1,573 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TestComponent should match snapshot when logged in 1`] = `
+<div
+  id="root2"
+  ng-version="6.1.10"
+>
+  <div
+    class="grid-container"
+  >
+    <div
+      fxlayout="row"
+      fxlayoutalign="space-between center"
+      ng-reflect-align="space-between center"
+      ng-reflect-layout="row"
+      style="box-sizing: border-box; display: flex; flex-direction: row; max-height: 100%; align-content: center; align-items: center; justify-content: space-between;"
+    >
+      <h1
+        class="mat-h1"
+      >
+        Logements disponibles
+      </h1>
+      <mat-form-field
+        class="search-form mat-form-field ng-tns-c16-0 mat-primary mat-form-field-type-mat-input mat-form-field-appearance-legacy mat-form-field-can-float mat-form-field-hide-placeholder ng-untouched ng-pristine ng-valid _mat-animation-noopable"
+        fxflex="200px"
+        ng-reflect-flex="200px"
+        style="box-sizing: border-box; max-width: 200px; min-width: 200px;"
+      >
+        <div
+          class="mat-form-field-wrapper"
+        >
+          <div
+            class="mat-form-field-flex"
+          >
+            <!--bindings={
+  "ng-reflect-ng-if": "false"
+}-->
+            <!--bindings={
+  "ng-reflect-ng-if": "0"
+}-->
+            <div
+              class="mat-form-field-infix"
+            >
+              <input
+                aria-invalid="false"
+                aria-required="false"
+                class="mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-valid"
+                id="mat-input-2"
+                matinput=""
+                ng-reflect-form="[object Object]"
+                ng-reflect-placeholder="Chercher une ville"
+                ng-reflect-type="search"
+                placeholder="Chercher une ville"
+                type="search"
+              />
+              <span
+                class="mat-form-field-label-wrapper"
+              >
+                <!--bindings={
+  "ng-reflect-ng-if": "true"
+}-->
+                <label
+                  aria-owns="mat-input-2"
+                  class="mat-form-field-label ng-tns-c16-0 mat-empty mat-form-field-empty ng-star-inserted"
+                  for="mat-input-2"
+                  id="mat-form-field-label-5"
+                  ng-reflect-ng-switch="false"
+                >
+                  <!--bindings={
+  "ng-reflect-ng-switch-case": "false"
+}-->
+                  <!---->
+                  Chercher une ville
+                  <!--bindings={
+  "ng-reflect-ng-switch-case": "true"
+}-->
+                  <!--bindings={
+  "ng-reflect-ng-if": "false"
+}-->
+                </label>
+              </span>
+            </div>
+            <!--bindings={
+  "ng-reflect-ng-if": "0"
+}-->
+          </div>
+          <!--bindings={
+  "ng-reflect-ng-if": "true"
+}-->
+          <div
+            class="mat-form-field-underline ng-tns-c16-0 ng-star-inserted"
+          >
+            <span
+              class="mat-form-field-ripple"
+            />
+          </div>
+          <div
+            class="mat-form-field-subscript-wrapper"
+            ng-reflect-ng-switch="hint"
+          >
+            <!--bindings={
+  "ng-reflect-ng-switch-case": "error"
+}-->
+            <!--bindings={
+  "ng-reflect-ng-switch-case": "hint"
+}-->
+            <div
+              class="mat-form-field-hint-wrapper ng-tns-c16-0 ng-trigger ng-trigger-transitionMessages ng-star-inserted"
+              style="opacity:1;transform:translateY(0%);0:opacity;1:transform;"
+            >
+              <!--bindings={
+  "ng-reflect-ng-if": ""
+}-->
+              <div
+                class="mat-form-field-hint-spacer"
+              />
+            </div>
+          </div>
+        </div>
+      </mat-form-field>
+    </div>
+    <!--bindings={
+  "ng-reflect-ng-if": "false",
+  "ng-reflect-ng-if-else": "[object Object]"
+}-->
+    <mat-grid-list
+      class="mat-grid-list ng-star-inserted"
+      cols="3"
+      ng-reflect-cols="3"
+    >
+      <div>
+        <!--bindings={
+  "ng-reflect-ng-for-of": "[object Object]"
+}-->
+        <mat-grid-tile
+          class="mat-grid-tile ng-star-inserted"
+          ng-reflect-colspan="1"
+          ng-reflect-rowspan="1"
+          style="left: 0px; margin-top: 0px;"
+        >
+          <figure
+            class="mat-figure"
+          >
+            <mat-card
+              class="home-card mat-card"
+            >
+              <mat-card-header
+                class="mat-card-header"
+              >
+                <div
+                  class="mat-card-header-text"
+                >
+                  <mat-card-title
+                    class="mat-card-title"
+                  >
+                    <a
+                      href="/rentals/1"
+                      ng-reflect-router-link="/rentals/,1"
+                    >
+                      Title
+                    </a>
+                  </mat-card-title>
+                </div>
+              </mat-card-header>
+              <img
+                class="mat-card-image"
+                height="190"
+                mat-card-image=""
+                ng-reflect-router-link="/rentals/,1"
+                src="image"
+                tabindex="0"
+              />
+              <mat-card-content
+                class="mat-card-content"
+              >
+                <mat-chip-list
+                  aria-disabled="false"
+                  aria-invalid="false"
+                  aria-multiselectable="false"
+                  aria-orientation="horizontal"
+                  aria-required="false"
+                  class="mat-chip-list"
+                  id="mat-chip-list-2"
+                  role="listbox"
+                  tabindex="0"
+                >
+                  <div
+                    class="mat-chip-list-wrapper"
+                  >
+                    <mat-chip
+                      aria-disabled="false"
+                      aria-selected="true"
+                      class="mat-chip mat-primary mat-standard-chip mat-chip-selected"
+                      color="primary"
+                      ng-reflect-color="primary"
+                      ng-reflect-selected=""
+                      role="option"
+                      selected=""
+                      tabindex="-1"
+                    >
+                      Paris
+                    </mat-chip>
+                    <mat-chip
+                      aria-disabled="false"
+                      aria-selected="false"
+                      class="mat-chip mat-primary mat-standard-chip"
+                      role="option"
+                      tabindex="-1"
+                    >
+                      Logement entier
+                    </mat-chip>
+                    <mat-chip
+                      aria-disabled="false"
+                      aria-selected="false"
+                      class="mat-chip mat-primary mat-standard-chip"
+                      role="option"
+                      tabindex="-1"
+                    >
+                      2 Ch
+                    </mat-chip>
+                    <mat-chip
+                      aria-disabled="false"
+                      aria-selected="false"
+                      class="mat-chip mat-primary mat-standard-chip"
+                      role="option"
+                      tabindex="-1"
+                    >
+                      4 Pers
+                    </mat-chip>
+                    <!--bindings={
+  "ng-reflect-ng-if": "true",
+  "ng-reflect-ng-if-else": "[object Object]"
+}-->
+                    <mat-chip
+                      aria-disabled="false"
+                      aria-selected="true"
+                      class="mat-chip mat-standard-chip mat-accent mat-chip-selected ng-star-inserted"
+                      color="accent"
+                      ng-reflect-color="accent"
+                      ng-reflect-selected=""
+                      role="option"
+                      selected=""
+                      tabindex="-1"
+                    >
+                      80 € par nuit
+                    </mat-chip>
+                    <!---->
+                  </div>
+                </mat-chip-list>
+                <div
+                  class="actions"
+                >
+                  <button
+                    class="mat-stroked-button mat-accent _mat-animation-noopable"
+                    color="accent"
+                    mat-stroked-button=""
+                    ng-reflect-color="accent"
+                    ng-reflect-router-link="/rentals/,1"
+                    tabindex="0"
+                  >
+                    <span
+                      class="mat-button-wrapper"
+                    >
+                      Réserver
+                    </span>
+                    <div
+                      class="mat-button-ripple mat-ripple"
+                      matripple=""
+                      ng-reflect-centered="false"
+                      ng-reflect-disabled="false"
+                      ng-reflect-trigger="[object HTMLButtonElement]"
+                    />
+                    <div
+                      class="mat-button-focus-overlay"
+                    />
+                  </button>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </figure>
+        </mat-grid-tile>
+      </div>
+    </mat-grid-list>
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`TestComponent should match snapshot when not logged in 1`] = `
+<div
+  id="root1"
+  ng-version="6.1.10"
+>
+  <div
+    class="grid-container"
+  >
+    <div
+      fxlayout="row"
+      fxlayoutalign="space-between center"
+      ng-reflect-align="space-between center"
+      ng-reflect-layout="row"
+      style="box-sizing: border-box; display: flex; flex-direction: row; max-height: 100%; align-content: center; align-items: center; justify-content: space-between;"
+    >
+      <h1
+        class="mat-h1"
+      >
+        Logements disponibles
+      </h1>
+      <mat-form-field
+        class="search-form mat-form-field ng-tns-c8-0 mat-primary mat-form-field-type-mat-input mat-form-field-appearance-legacy mat-form-field-can-float mat-form-field-hide-placeholder ng-untouched ng-pristine ng-valid _mat-animation-noopable"
+        fxflex="200px"
+        ng-reflect-flex="200px"
+        style="box-sizing: border-box; max-width: 200px; min-width: 200px;"
+      >
+        <div
+          class="mat-form-field-wrapper"
+        >
+          <div
+            class="mat-form-field-flex"
+          >
+            <!--bindings={
+  "ng-reflect-ng-if": "false"
+}-->
+            <!--bindings={
+  "ng-reflect-ng-if": "0"
+}-->
+            <div
+              class="mat-form-field-infix"
+            >
+              <input
+                aria-invalid="false"
+                aria-required="false"
+                class="mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-valid"
+                id="mat-input-1"
+                matinput=""
+                ng-reflect-form="[object Object]"
+                ng-reflect-placeholder="Chercher une ville"
+                ng-reflect-type="search"
+                placeholder="Chercher une ville"
+                type="search"
+              />
+              <span
+                class="mat-form-field-label-wrapper"
+              >
+                <!--bindings={
+  "ng-reflect-ng-if": "true"
+}-->
+                <label
+                  aria-owns="mat-input-1"
+                  class="mat-form-field-label ng-tns-c8-0 mat-empty mat-form-field-empty ng-star-inserted"
+                  for="mat-input-1"
+                  id="mat-form-field-label-3"
+                  ng-reflect-ng-switch="false"
+                >
+                  <!--bindings={
+  "ng-reflect-ng-switch-case": "false"
+}-->
+                  <!---->
+                  Chercher une ville
+                  <!--bindings={
+  "ng-reflect-ng-switch-case": "true"
+}-->
+                  <!--bindings={
+  "ng-reflect-ng-if": "false"
+}-->
+                </label>
+              </span>
+            </div>
+            <!--bindings={
+  "ng-reflect-ng-if": "0"
+}-->
+          </div>
+          <!--bindings={
+  "ng-reflect-ng-if": "true"
+}-->
+          <div
+            class="mat-form-field-underline ng-tns-c8-0 ng-star-inserted"
+          >
+            <span
+              class="mat-form-field-ripple"
+            />
+          </div>
+          <div
+            class="mat-form-field-subscript-wrapper"
+            ng-reflect-ng-switch="hint"
+          >
+            <!--bindings={
+  "ng-reflect-ng-switch-case": "error"
+}-->
+            <!--bindings={
+  "ng-reflect-ng-switch-case": "hint"
+}-->
+            <div
+              class="mat-form-field-hint-wrapper ng-tns-c8-0 ng-trigger ng-trigger-transitionMessages ng-star-inserted"
+              style="opacity:1;transform:translateY(0%);0:opacity;1:transform;"
+            >
+              <!--bindings={
+  "ng-reflect-ng-if": ""
+}-->
+              <div
+                class="mat-form-field-hint-spacer"
+              />
+            </div>
+          </div>
+        </div>
+      </mat-form-field>
+    </div>
+    <!--bindings={
+  "ng-reflect-ng-if": "false",
+  "ng-reflect-ng-if-else": "[object Object]"
+}-->
+    <mat-grid-list
+      class="mat-grid-list ng-star-inserted"
+      cols="3"
+      ng-reflect-cols="3"
+    >
+      <div>
+        <!--bindings={
+  "ng-reflect-ng-for-of": "[object Object]"
+}-->
+        <mat-grid-tile
+          class="mat-grid-tile ng-star-inserted"
+          ng-reflect-colspan="1"
+          ng-reflect-rowspan="1"
+          style="left: 0px; margin-top: 0px;"
+        >
+          <figure
+            class="mat-figure"
+          >
+            <mat-card
+              class="home-card mat-card"
+            >
+              <mat-card-header
+                class="mat-card-header"
+              >
+                <div
+                  class="mat-card-header-text"
+                >
+                  <mat-card-title
+                    class="mat-card-title"
+                  >
+                    <a
+                      href="/rentals/1"
+                      ng-reflect-router-link="/rentals/,1"
+                    >
+                      Title
+                    </a>
+                  </mat-card-title>
+                </div>
+              </mat-card-header>
+              <img
+                class="mat-card-image"
+                height="190"
+                mat-card-image=""
+                ng-reflect-router-link="/rentals/,1"
+                src="image"
+                tabindex="0"
+              />
+              <mat-card-content
+                class="mat-card-content"
+              >
+                <mat-chip-list
+                  aria-disabled="false"
+                  aria-invalid="false"
+                  aria-multiselectable="false"
+                  aria-orientation="horizontal"
+                  aria-required="false"
+                  class="mat-chip-list"
+                  id="mat-chip-list-1"
+                  role="listbox"
+                  tabindex="0"
+                >
+                  <div
+                    class="mat-chip-list-wrapper"
+                  >
+                    <mat-chip
+                      aria-disabled="false"
+                      aria-selected="true"
+                      class="mat-chip mat-primary mat-standard-chip mat-chip-selected"
+                      color="primary"
+                      ng-reflect-color="primary"
+                      ng-reflect-selected=""
+                      role="option"
+                      selected=""
+                      tabindex="-1"
+                    >
+                      Paris
+                    </mat-chip>
+                    <mat-chip
+                      aria-disabled="false"
+                      aria-selected="false"
+                      class="mat-chip mat-primary mat-standard-chip"
+                      role="option"
+                      tabindex="-1"
+                    >
+                      Logement entier
+                    </mat-chip>
+                    <mat-chip
+                      aria-disabled="false"
+                      aria-selected="false"
+                      class="mat-chip mat-primary mat-standard-chip"
+                      role="option"
+                      tabindex="-1"
+                    >
+                      2 Ch
+                    </mat-chip>
+                    <mat-chip
+                      aria-disabled="false"
+                      aria-selected="false"
+                      class="mat-chip mat-primary mat-standard-chip"
+                      role="option"
+                      tabindex="-1"
+                    >
+                      4 Pers
+                    </mat-chip>
+                    <!--bindings={
+  "ng-reflect-ng-if": "false",
+  "ng-reflect-ng-if-else": "[object Object]"
+}-->
+                    <mat-chip
+                      aria-disabled="false"
+                      aria-selected="true"
+                      class="mat-chip mat-standard-chip mat-warn mat-chip-selected ng-star-inserted"
+                      color="warn"
+                      ng-reflect-color="warn"
+                      ng-reflect-selected=""
+                      role="option"
+                      selected=""
+                      tabindex="-1"
+                    >
+                      Connectez-vous pour voir le prix
+                    </mat-chip>
+                    <!---->
+                  </div>
+                </mat-chip-list>
+                <div
+                  class="actions"
+                >
+                  <button
+                    class="mat-stroked-button mat-accent _mat-animation-noopable"
+                    color="accent"
+                    mat-stroked-button=""
+                    ng-reflect-color="accent"
+                    ng-reflect-router-link="/rentals/,1"
+                    tabindex="0"
+                  >
+                    <span
+                      class="mat-button-wrapper"
+                    >
+                      Réserver
+                    </span>
+                    <div
+                      class="mat-button-ripple mat-ripple"
+                      matripple=""
+                      ng-reflect-centered="false"
+                      ng-reflect-disabled="false"
+                      ng-reflect-trigger="[object HTMLButtonElement]"
+                    />
+                    <div
+                      class="mat-button-focus-overlay"
+                    />
+                  </button>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </figure>
+        </mat-grid-tile>
+      </div>
+    </mat-grid-list>
+    <!---->
+  </div>
+</div>
+`;

@@ -5,10 +5,7 @@ import { EffectsModule } from '@ngrx/effects';
 import { SharedModule } from '../shared/shared.module';
 import { ListComponent } from './list/list.component';
 import { DetailsComponent } from './details/details.component';
-import {
-  initialState as rentalsInitialState,
-  rentalsReducer,
-} from './+state/rentals.reducer';
+import { initialState as rentalsInitialState, rentalsReducer } from './+state/rentals.reducer';
 import { RentalsEffects } from './+state/rentals.effects';
 import { BookingModule } from '../booking/booking.module';
 
@@ -22,5 +19,6 @@ import { BookingModule } from '../booking/booking.module';
     EffectsModule.forFeature([RentalsEffects]),
   ],
   declarations: [ListComponent, DetailsComponent],
+
 })
 export class RentalsModule {}
