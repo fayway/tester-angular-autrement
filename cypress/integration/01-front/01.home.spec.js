@@ -20,7 +20,7 @@ describe('WaterBnb Home', () => {
         cy.get('[data-testid=price]').should('contain', 'Connectez-vous pour voir le prix')
           .get('[data-testid=book]')
           .click()
-          .hash().should('eq', '#/login')
+          .location('pathname').should('eq', '/login')
       });
     cy.get('.company')
       .click()
