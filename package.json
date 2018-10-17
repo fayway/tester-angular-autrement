@@ -88,6 +88,8 @@
     "jasmine-marbles": "0.3.1",
     "jasmine-spec-reporter": "~4.2.1",
     "jest": "^23.0.0",
+    "jest-chain": "^1.0.4",
+    "jest-extended": "^0.11.0",
     "jest-preset-angular": "^6.0.1",
     "karma": "~3.0.0",
     "karma-chrome-launcher": "~2.2.0",
