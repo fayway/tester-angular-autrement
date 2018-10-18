@@ -42,6 +42,7 @@ describe('Login page', () => {
       .click()
       .url().should('contain', '/')
       .get('[data-testid=user]').should('contain', 'Saul Goodman')
+      .get('[data-testid=premium').should('be.visible')
       .get('[data-testid^=rental]').should('exist')
   });
 

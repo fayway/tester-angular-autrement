@@ -25,22 +25,11 @@
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
 Cypress.Commands.add('login', (username, password) => {
-  cy.request({
-      log: false,
-      method: 'POST',
-      url: 'http://localhost:4200/api/authenticate',
-      body: {
-        username,
-        password
-      }
-    }
-  ).then((response) => {
-    const {accessToken, user} = response.body;
-    cy.log(`Logged now with ${user.username}`);
-    cy.server({
-      headers: {
-        'x-auth-token': accessToken
-      }
-    });
-  })
+  cy.visit('/login');
+  cy.get('input[name=username]')
+    .type(username)
+    .get('input[name=password]')
+    .type(password)
+    .get('button[type=submit]')
+    .click();
 });

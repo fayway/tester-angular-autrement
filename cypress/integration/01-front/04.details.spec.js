@@ -15,14 +15,7 @@ describe('WaterBnb Home with stubbed api calls', () => {
         cy.get('[data-testid=price]').should('contain', 'Connectez-vous pour voir le prix')
       });
 
-    cy.visit('/login');
-
-    cy.get('input[name=username]')
-      .type('user1')
-      .get('input[name=password]')
-      .type('pass1')
-      .get('button[type=submit]')
-      .click();
+    cy.login('user1', 'pass1');
 
     cy.get('[data-testid=rental-1]')
       .within(() => {
@@ -38,22 +31,6 @@ describe('WaterBnb Home with stubbed api calls', () => {
           .url().should('contain', '/login');
       });
   });
-
-  it.only('should not redirect to login when logged in', async ()=> {
-    await cy.login('user1', 'pass1');
-    cy.server({
-      headers: {
-        'x-auth-bob': 'bob'
-      }
-    })
-    cy.visit('/');
-    expect(1 +1 ).to.eq(2);
-    //
-    // cy.get('[data-testid=rental-1]')
-    //   .within(() => {
-    //     cy.get('[data-testid=price]').should('contain', '40')
-    //   });
-  })
 
 });
 
