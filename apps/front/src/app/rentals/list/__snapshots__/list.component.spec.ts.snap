@@ -143,6 +143,7 @@ exports[`TestComponent should match snapshot when logged in 1`] = `
           >
             <mat-card
               class="home-card mat-card"
+              data-testid="rental-1"
             >
               <mat-card-header
                 class="mat-card-header"
@@ -154,6 +155,7 @@ exports[`TestComponent should match snapshot when logged in 1`] = `
                     class="mat-card-title"
                   >
                     <a
+                      data-testid="title"
                       href="/rentals/1"
                       ng-reflect-router-link="/rentals/,1"
                     >
@@ -164,6 +166,7 @@ exports[`TestComponent should match snapshot when logged in 1`] = `
               </mat-card-header>
               <img
                 class="mat-card-image"
+                data-testid="image"
                 height="190"
                 mat-card-image=""
                 ng-reflect-router-link="/rentals/,1"
@@ -192,6 +195,7 @@ exports[`TestComponent should match snapshot when logged in 1`] = `
                       aria-selected="true"
                       class="mat-chip mat-primary mat-standard-chip mat-chip-selected"
                       color="primary"
+                      data-testid="city"
                       ng-reflect-color="primary"
                       ng-reflect-selected=""
                       role="option"
@@ -204,6 +208,7 @@ exports[`TestComponent should match snapshot when logged in 1`] = `
                       aria-disabled="false"
                       aria-selected="false"
                       class="mat-chip mat-primary mat-standard-chip"
+                      data-testid="type"
                       role="option"
                       tabindex="-1"
                     >
@@ -213,6 +218,7 @@ exports[`TestComponent should match snapshot when logged in 1`] = `
                       aria-disabled="false"
                       aria-selected="false"
                       class="mat-chip mat-primary mat-standard-chip"
+                      data-testid="roomsNbr"
                       role="option"
                       tabindex="-1"
                     >
@@ -222,6 +228,7 @@ exports[`TestComponent should match snapshot when logged in 1`] = `
                       aria-disabled="false"
                       aria-selected="false"
                       class="mat-chip mat-primary mat-standard-chip"
+                      data-testid="guestsNbr"
                       role="option"
                       tabindex="-1"
                     >
@@ -236,6 +243,7 @@ exports[`TestComponent should match snapshot when logged in 1`] = `
                       aria-selected="true"
                       class="mat-chip mat-standard-chip mat-accent mat-chip-selected ng-star-inserted"
                       color="accent"
+                      data-testid="price"
                       ng-reflect-color="accent"
                       ng-reflect-selected=""
                       role="option"
@@ -253,6 +261,7 @@ exports[`TestComponent should match snapshot when logged in 1`] = `
                   <button
                     class="mat-stroked-button mat-accent _mat-animation-noopable"
                     color="accent"
+                    data-testid="book"
                     mat-stroked-button=""
                     ng-reflect-color="accent"
                     ng-reflect-router-link="/rentals/,1"
@@ -429,6 +438,7 @@ exports[`TestComponent should match snapshot when not logged in 1`] = `
           >
             <mat-card
               class="home-card mat-card"
+              data-testid="rental-1"
             >
               <mat-card-header
                 class="mat-card-header"
@@ -440,6 +450,7 @@ exports[`TestComponent should match snapshot when not logged in 1`] = `
                     class="mat-card-title"
                   >
                     <a
+                      data-testid="title"
                       href="/rentals/1"
                       ng-reflect-router-link="/rentals/,1"
                     >
@@ -450,6 +461,7 @@ exports[`TestComponent should match snapshot when not logged in 1`] = `
               </mat-card-header>
               <img
                 class="mat-card-image"
+                data-testid="image"
                 height="190"
                 mat-card-image=""
                 ng-reflect-router-link="/rentals/,1"
@@ -478,6 +490,7 @@ exports[`TestComponent should match snapshot when not logged in 1`] = `
                       aria-selected="true"
                       class="mat-chip mat-primary mat-standard-chip mat-chip-selected"
                       color="primary"
+                      data-testid="city"
                       ng-reflect-color="primary"
                       ng-reflect-selected=""
                       role="option"
@@ -490,6 +503,7 @@ exports[`TestComponent should match snapshot when not logged in 1`] = `
                       aria-disabled="false"
                       aria-selected="false"
                       class="mat-chip mat-primary mat-standard-chip"
+                      data-testid="type"
                       role="option"
                       tabindex="-1"
                     >
@@ -499,6 +513,7 @@ exports[`TestComponent should match snapshot when not logged in 1`] = `
                       aria-disabled="false"
                       aria-selected="false"
                       class="mat-chip mat-primary mat-standard-chip"
+                      data-testid="roomsNbr"
                       role="option"
                       tabindex="-1"
                     >
@@ -508,6 +523,7 @@ exports[`TestComponent should match snapshot when not logged in 1`] = `
                       aria-disabled="false"
                       aria-selected="false"
                       class="mat-chip mat-primary mat-standard-chip"
+                      data-testid="guestsNbr"
                       role="option"
                       tabindex="-1"
                     >
@@ -522,6 +538,7 @@ exports[`TestComponent should match snapshot when not logged in 1`] = `
                       aria-selected="true"
                       class="mat-chip mat-standard-chip mat-warn mat-chip-selected ng-star-inserted"
                       color="warn"
+                      data-testid="price"
                       ng-reflect-color="warn"
                       ng-reflect-selected=""
                       role="option"
@@ -539,6 +556,7 @@ exports[`TestComponent should match snapshot when not logged in 1`] = `
                   <button
                     class="mat-stroked-button mat-accent _mat-animation-noopable"
                     color="accent"
+                    data-testid="book"
                     mat-stroked-button=""
                     ng-reflect-color="accent"
                     ng-reflect-router-link="/rentals/,1"
