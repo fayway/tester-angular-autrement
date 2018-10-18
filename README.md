@@ -1,44 +1,39 @@
-# WaterbnbApp
+# Tester les applications Angular autrement
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) using [Nrwl Nx](https://nrwl.io/nx).
+mais les tester tout de même !
 
-## Nrwl Extensions for Angular (Nx)
+## Présentation
 
-<a href="https://nrwl.io/nx"><img src="https://preview.ibb.co/mW6sdw/nx_logo.png"></a>
+[Slides](https://goo.gl/1emYMd)
 
-Nx is an open source toolkit for enterprise Angular applications.
+## Demo
 
-Nx is designed to help you create and build enterprise grade Angular applications. It provides an opinionated approach to application project structure and patterns.
+Pour démarrer l'API back et l'appli front
 
-## Quick Start & Documentation
+    npm run go
 
-[Watch a 5-minute video on how to get started with Nx.](http://nrwl.io/nx)
+Lancer les tests Jest
 
-## Generate your first application
+    npm run test
 
-Run `ng generate app myapp` to generate an application. When using Nx, you can create multiple applications and libraries in the same CLI workspace. Read more [here](http://nrwl.io/nx).
+Lancer les tests Cypress
 
-## Development server
+    npm run e2e
 
-Run `ng serve --project=myapp` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Lancer les tests Cypress en mode console
 
-## Code scaffolding
+    npm run e2e:ci
 
-Run `ng generate component component-name --project=myapp` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Intro
 
-Run `ng build --project=myapp` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Nul ne peut remettre en question l'**apport positif** des **tests automatisés** dans un projet informatique.
 
-## Running unit tests
+Par contre **le constat est contradictoire** : Peu, voir très **très** **peu d'équipes les** **adoptent** et y restent fidèles... et on parle même pas de trouver une équipe qui, en plus de les adopter, elle **"aime"** les faire et n'arrive pas à s'en passer.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Les raisons sont multiples: Ça va de la **culture d'entreprise** à la **difficulté** technique de **l'implementation** en passant par la **sensibilisation** du **client** sur le coût initial des tests.
 
-## Running end-to-end tests
+Mais les experts des tests sont unanimes, c'est la **difficulté technique** de l'implementation qui **pose le plus problème**, car même si on trouve un contexte (client, budget, délai...) favorisant, rien n'est gagné d'avance et l'équipe peut facilement se casser les dents au cours du chemin si **elle ne sait pas faire** ou si **elle** **n’est** **pas bien** **outillée**.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+Dans cette présentation, je remettrai les [**développeurs, développeurs, développeurs....**](https://www.youtube.com/watch?v=Vhh_GeBPOhs) au centre du débat. On verra comment la communauté JavaScript tendent actuellement à l**aisser tomber l'outillage orthodoxe d'Angular (Karma, Protractor)** pour le remplacer par d'autres outils beaucoup plus '**developer-friendly**'.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
